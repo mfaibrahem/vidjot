@@ -1,0 +1,260 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  min-height: 100vh;
+}
+h1 {
+  margin: 0;
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+.main-header {
+  background: rgba(0, 128, 128, 0.726);
+  box-shadow: 1px 2px 8px rgba(0, 128, 128, 0.726);
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding: .4em;
+  margin-bottom: 2em;
+  height: 100vh;
+  min-width: 40%;
+  margin-left: -27%;
+  transition: all .5s ease-in-out;
+  position: fixed;
+  opacity: .9;
+}
+.navbar-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30px;
+  height: 28px;
+  position: fixed;
+  top: .8em;
+  left: .8em;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+.navbar-btn > span {
+  background: #fff;
+  border-radius: 5px;
+  height: 5px;
+  width: 28px;
+  margin-bottom: 4px;
+  transition: all .3s;
+}
+
+.toggle-main-header {
+  margin-left: 0;
+  transition: all .5s ease-in-out;
+}
+.toggle-navbar-btn {
+  margin-left: 26%;
+  transition: all .5s ease-in-out;
+}
+.toggle-navbar-btn > span:nth-of-type(1),
+.toggle-navbar-btn > span:nth-of-type(3) {
+  position: absolute;
+  top: .8em;
+  background-color: tomato;
+  transition: all .3s;
+}
+.toggle-navbar-btn > span:nth-of-type(1) {
+  transform: rotate(45deg);
+}
+.toggle-navbar-btn > span:nth-of-type(2){
+  display: none;
+}
+.toggle-navbar-btn > span:nth-of-type(3) {
+  transform: rotate(-45deg);
+}
+
+
+.main-header > ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5em;
+}
+.main-header > ul > li {
+  font-size: 1.5em;
+  opacity: 0;
+  visibility: hidden;
+  margin-bottom: 1em;
+  text-align: center;
+  transition: all 2s ease-in-out;
+}
+.main-header > ul > li > a {
+  color: #fff;
+  display: block;
+  transition: all .3s;
+}
+.main-header > ul > li > a:hover {
+  color: #333;
+  font-weight: bold;
+  transform: scale(1.2);
+  transition: all .3s;
+}
+
+.main-header > ul > li.view-navbar {
+  opacity: 1;
+  visibility: visible;
+  transition: all 2s ease-in-out;
+}
+
+.home-container {
+  background: #f0ffff;
+  margin-left: 13%;
+  text-align: center;
+  padding: 2em .4em;
+  transition: all .5s ease-in-out;
+}
+.toggle-home-container {
+  margin-left: 40%;
+  transition: all .5s ease-in-out;
+}
+.home-add-btn {
+  display: block;
+    color: #fff;
+    background: red;
+    padding: 1em 1.2em;
+    width: fit-content;
+    margin: auto;
+    opacity: .7;
+    border-radius: 3px;
+  transition: all .3s;
+}
+.home-add-btn:hover {
+  transform: scale(1.08);
+  opacity: .8;
+  background: #333;
+  box-shadow: 0 1px 8px 2px rgba(51, 51, 51, .4);
+  transition: all .3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 526px) {
+  
+  .main-header {
+    min-width: 35%;
+    margin-left: -27%;
+  }
+  .navbar-btn {
+    left: .4em;
+  }
+  .toggle-navbar-btn {
+    margin-left: 26%;
+  }
+  .toggle-main-header {
+    margin-left: 0;
+  }
+
+  .home-container {
+    margin-left: 8%;
+    padding-left: .5em;
+  }
+  .toggle-home-container {
+    margin-left: 35%;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  .main-header {
+    min-width: 30%;
+    margin-left: -22%;
+  }
+  .navbar-btn {
+    left: 1.1em;
+  }
+  .toggle-navbar-btn {
+    margin-left: 21%;
+  }
+  .toggle-main-header {
+    margin-left: 0;
+  }
+
+  .home-container {
+    margin-left: 8%;
+    padding-left: .7em;
+  }
+  .toggle-home-container {
+    margin-left: 30%;
+  }
+
+}
+
+@media only screen and (min-width: 992px) {
+  
+  .main-header {
+    min-width: 25%;
+    margin-left: -17%;
+  }
+  .navbar-btn {
+    left: 1.4em;
+  }
+  .toggle-navbar-btn {
+    margin-left: 16%;
+  }
+  .toggle-main-header {
+    margin-left: 0;
+  }
+
+  .home-container {
+    margin-left: 8%;
+    padding-left: .9em;
+  }
+  .toggle-home-container {
+    margin-left: 25%;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+  
+  .main-header {
+    min-width: 15%;
+    margin-left: -10%;
+  }
+  .navbar-btn {
+    left: 1em;
+  }
+  .toggle-navbar-btn {
+    margin-left: 10%;
+  }
+  .toggle-main-header {
+    margin-left: 0;
+  }
+
+  .home-container {
+    margin-left: 5%;
+    padding-left: 1.2em;
+  }
+  .toggle-home-container {
+    margin-left: 15%;
+  }
+
+}
