@@ -3,7 +3,6 @@ const UInavbarLI = document.querySelectorAll('.main-header > ul > li');
 const UInavbarLIBtn = document.querySelector('.navbar-btn');
 const UIHomeContainer = document.querySelector('.home-container');
 
-
 callEventListeners ();
 
 function callEventListeners () {
@@ -18,3 +17,10 @@ function toggleNavbar() {
   UInavbarLIBtn.classList.toggle('toggle-navbar-btn');
   UIHomeContainer.classList.toggle('toggle-home-container');
 }
+
+const UIerrMsg = document.querySelectorAll('.err-class');
+UIerrMsg.forEach(msg => {
+  setTimeout(() => {
+    msg.classList.add('hide-err');
+  }, 4000);
+});

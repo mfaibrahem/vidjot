@@ -1,0 +1,15 @@
+<div class="home-container container">
+  <h1>Edit Video Idea</h1>
+  {{#each errors}}
+    <span class="err-class">{{text}}</span>
+  {{else}}
+  {{/each}}
+  <form action="/ideas/{{idea.id}}?_method=PUT" method="POST">
+    <input type="hidden" name="_method" value="PUT">
+    <label for="title">Title</label>
+    <input name="title" type="text" required value="{{idea.title}}">
+    <label for="details">Details</label>
+    <textarea name="details" rows="10" required>{{idea.details}}</textarea>
+    <button type="submit">Submit</button>
+  </form>
+</div>

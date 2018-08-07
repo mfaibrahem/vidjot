@@ -3,11 +3,13 @@
 }
 body {
   margin: 0;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Raleway', sans-serif, 'Courier New', Courier, monospace;
   min-height: 100vh;
+  background: #f0ffff;
 }
 h1 {
   margin: 0;
+  font-weight: 300;
 }
 ul {
   padding: 0;
@@ -15,6 +17,155 @@ ul {
 }
 a {
   text-decoration: none;
+}
+
+.container {
+ text-align: center;
+}
+
+form[action$="DELETE"] {
+  display: block;
+  max-width: min-content;
+  margin: 0;
+}
+
+form[action$="DELETE"]>input:focus {
+  border: 0;
+  background: red;
+}
+.edit-delete-class {
+  display: flex;
+  flex-wrap: wrap;
+}
+.delete-btn {
+  color: #fff;
+  background: red;
+  opacity: .7;
+  font-size: 1.2em;
+  padding: .3em .6em;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 0;
+  margin-left: 1em;
+  border: 0;
+}
+.delete-btn:hover {
+  box-shadow: 0 1px 2px 1px rgba(255, 0, 0, 0.664);
+}
+
+.idea-card {
+  background-color: thistle;
+  padding: 1em;
+  margin-bottom: 1em;
+  text-align: start;
+  color: #444;
+  opacity: .9;
+  border-radius: 6px;
+  box-shadow: 1px 2px 4px 1px thistle;
+}
+
+.edit-btn {
+  background: teal;
+  font-size: 1.2em;
+  padding: .3em .6em;
+  color: #fff;
+  border-radius: 4px;
+}
+.edit-btn:hover {
+  box-shadow: 0px 1px 2px 1px rgba(0, 128, 128, 0.726);
+}
+
+.err-class {
+  display: block;
+  padding: .5em 1em;
+  color: #fff;
+  background: rgb(218, 126, 126);
+  max-width: 50%;
+  margin: auto;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  opacity: .8;
+  transition: all 1s;
+}
+.hide-err {
+  opacity: 0;
+  height: 0;
+  padding: 0;
+  transition: all 1s;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  max-width: 50%;
+  margin: auto;
+  color: rgb(85, 85, 85);
+}
+
+label {
+  margin-top: 1em;
+}
+form > input,
+form > textarea {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: .3em;
+  font-size: 1.5em;
+  width: 100%;
+  font-family: 'Raleway', sans-serif, 'Courier New', Courier, monospace;
+  transition: .4s;
+}
+form > input:focus,
+form > textarea:focus {
+  background: rgba(92, 235, 92, 0.274);
+  border: 0;
+  outline: 0;
+  color: #333;
+  transition: .4s;
+}
+
+.line-input {
+  width: 0;
+  height: 2px;
+  background: blue;
+  display: block;
+  align-self: flex-start;
+  transition: 1s;
+}
+
+form > input:focus {
+  border-radius: 0;
+  transition: 1s;
+}
+
+form > input:focus + .line-input {
+  width: 100%;
+  transition: 1s;
+}
+
+form > label {
+  align-self: flex-start;
+  margin-bottom: .5em;
+  font-size: 1.3em;
+}
+form > button {
+  align-self: flex-start;
+  font-size: 1.4em;
+  padding: .4em .7em;
+  background: teal;
+  color: #fff;
+  border-width: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 1em;
+  transition: .2s;
+}
+form > button:hover {
+  box-shadow: 0px 2px 8px 1px rgba(0, 128, 128, 0.726);
+  transform: scale(1.1);
+  transition: .2s;
 }
 
 .main-header {
@@ -110,7 +261,7 @@ a {
 }
 
 .home-container {
-  background: #f0ffff;
+  /* background: #f0ffff; */
   margin-left: 13%;
   text-align: center;
   padding: 2em .4em;

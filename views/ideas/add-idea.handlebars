@@ -1,0 +1,16 @@
+<div class="home-container container">
+  <h1 style="margin-bottom: 1em;">Add New Video Idea</h1>
+  {{#each errors}}
+    <span class="err-class">{{text}}</span>
+  {{else}}
+  {{/each}}
+  <form action="/ideas" method="post">
+    <label for="title">Title</label>
+    <input name="title" type="text" required>
+    <span class="line-input"></span>
+    <label for="details">Details</label>
+    <textarea name="details" rows="10" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+  
