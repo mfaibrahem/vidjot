@@ -2,7 +2,7 @@ const express = require('express');
 
 const router = express.Router();
 router.get('/register', (rea, res) => {
-  res.send('register');
+  res.render('./users/register');
 });
 
 router.get('/login', (req, res) => {

@@ -1,0 +1,32 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 438.99 252">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 10px;
+      }
+
+      .cls-1 {
+        stroke: #009fe3;
+      }
+
+      .cls-2 {
+        stroke: #e30613;
+      }
+
+      .cls-3 {
+        fill: #009fe3;
+      }
+    </style>
+  </defs>
+  <title>vidJot_logo</title>
+  <rect class="cls-1" x="5" y="5" width="286.94" height="242" rx="59" ry="59"/>
+  <path class="cls-2" d="M812,136" transform="translate(-153 -100.77)"/>
+  <path class="cls-1" d="M444.94,164.77,554,119.46a23.83,23.83,0,0,1,33,22l-.07,167a23.82,23.82,0,0,1-32.33,22.23l-109.65-42" transform="translate(-153 -100.77)"/>
+  <path class="cls-1" d="M588,345.82" transform="translate(-153 -100.77)"/>
+  <g>
+    <path class="cls-3" d="M207.3,166.92h8.56L237,233.83c4.39,14,7.42,24.62,12.11,38.47h.69c4.68-13.85,7.77-24.43,12.1-38.47l21.19-66.91h8.12L253.79,281.57H245.1Z" transform="translate(-153 -100.77)"/>
+    <path class="cls-3" d="M317.67,264.56l5.8-4.69c6.62,11.36,16.68,16.48,26.18,16.48,19.1,0,27.3-10.08,27.3-30.89V173.52H327.12v-6.78H385v79.43c0,20.72-8.68,37.48-35.27,37.48A35.78,35.78,0,0,1,317.67,264.56Z" transform="translate(-153 -100.77)"/>
+  </g>
+</svg>

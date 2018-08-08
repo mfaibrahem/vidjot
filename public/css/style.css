@@ -19,6 +19,9 @@ a {
   text-decoration: none;
 }
 
+img {
+  width: 130px;
+}
 .container {
  text-align: center;
 }
@@ -129,7 +132,7 @@ form > textarea:focus {
 .line-input {
   width: 0;
   height: 2px;
-  background: blue;
+  background: rgb(79, 204, 246);
   display: block;
   align-self: flex-start;
   transition: 1s;
